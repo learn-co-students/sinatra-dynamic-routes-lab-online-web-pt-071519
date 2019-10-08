@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+      <h1>lol</h1>
+
+      <% if params.count < 3 %>
+      <% num = params[:number] %>
+      <% phrase = params[:phrase] %>
+      <h1><% num.to_i.times do   %></h1>
+      <h1><%= "#{phrase}" %></h1>
+      <h1><% end %></h1>
+      <% else       %>
+      <% z = params[:z] %>
+      <% o = params[:o] %>
+      <% t = params[:t] %>
+      <% th = params[:th] %>
+      <% f = params[:f] %>
+      <h1><%= "#{z} #{o} #{t} #{th} #{f}." %></h1>
+      <% end %>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+      <% z = params[:num2].to_i %>
+      <% y = params[:num1].to_i %>
+      <% x = params[:op] %>
+        <% if x == "multiply" %>
+        <%   a =  y * z  %>
+        <% elsif x == "divide" %>
+        <%   a = y / z   %>
+        <% elsif x == "add" %>
+        <%   a =  y + z  %>
+        <% elsif x == "subtract" %>
+        <%  a =  y - z   %>
+        <% end %>
+        <h1><%= a %><h1>
+        <p>This is a NOT a static url</p>
+    </body>
+</html>
